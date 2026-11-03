@@ -6,7 +6,7 @@
 - 除咗新課嘅 Markdown＋PDF，**必須一併交付兩個資料庫檔案**：`JLPT_課程總目錄.md` 同埋 `JLPT_N5-N3_自學進度記錄.md`（即係呢個檔案）。
 - 即係話每次回覆最後要有 4 個 `<REF>file✦` 標籤：新課 .md、新課 .pdf、課程總目錄.md、自學進度記錄.md。
 - **課程庫入口網頁**：`/mnt/agents/output/app/` 有一個課程庫入口 `index.html`（列出全部課程檔案下載連結）。每次出新課後，將新課 .md/.pdf 複製入 `app/JLPT_課程庫/`、更新 `index.html` 對應行（狀態＋連結＋頂部統計），再用 website_version_manager 以 `type: "html"` 儲存新版本，並將入口網頁連結／版本 ID 一併交付俾用戶。
-- **GitHub Pages 發布**：每次出新課後，同步 `JLPT_課程庫_GitHub/`（index.html、css、兩個資料庫檔案、JLPT_課程庫/、課程頁/、README.md、.nojekyll），重新打包 `JLPT_課程庫_GitHub.zip` 並一併交付俾用戶上傳；如環境有 GitHub 憑證則直接 git push。
+- **GitHub 發布**：每次出新課後，執行 `bash /mnt/agents/.user/jlpt-config/push_to_github.sh "Day X: 課題名"` 直接 push 到 https://github.com/chancowen/CCCS-JLPT（GitHub Pages 1–2 分鐘內更新）；如腳本報錯（token 過期等），先同步 `JLPT_課程庫_GitHub/` 並重新打包 zip 作後備交付，提醒用戶更新 token。
 
 ## 目前進度
 - 已完成課題：9（Day 1：動詞分類；Day 2：て形變化規則；Day 3：て形句型；Day 4：ます形・辭書形・ない形；Day 5：核心助詞：は・が・を・に・で・へ；Day 6：形容詞：い形容詞・な形容詞活用；Day 7：過去式・否定式・疑問句；Day 8：指示詞（これ／それ／あれ）＋ N5 總複習；Day 9：意向形＋〜と思います／〜つもりです）
