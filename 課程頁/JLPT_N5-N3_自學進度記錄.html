@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>JLPT_N5-N3_������������������</title>
+  <title>JLPT ������������������</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -36,17 +36,23 @@ Markdown＋PDF，<strong>必須一併交付兩個資料庫檔案</strong>：<cod
 <code>index.html</code> 對應行（狀態＋連結＋頂部統計），再用
 website_version_manager 以 <code>type: "html"</code>
 儲存新版本，並將入口網頁連結／版本 ID 一併交付俾用戶。</li>
+<li><strong>GitHub 發布</strong>：每次出新課後，執行
+<code>bash /mnt/agents/.user/jlpt-config/push_to_github.sh "Day X: 課題名"</code>
+直接 push 到 https://github.com/chancowen/CCCS-JLPT（GitHub Pages 1–2
+分鐘內更新）；如腳本報錯（token 過期等），先同步
+<code>JLPT_課程庫_GitHub/</code> 並重新打包 zip 作後備交付，提醒用戶更新
+token。</li>
 </ul>
 <h2 id="目前進度">目前進度</h2>
 <ul>
-<li>已完成課題：9（Day 1：動詞分類；Day 2：て形變化規則；Day
+<li>已完成課題：10（Day 1：動詞分類；Day 2：て形變化規則；Day
 3：て形句型；Day 4：ます形・辭書形・ない形；Day
 5：核心助詞：は・が・を・に・で・へ；Day
 6：形容詞：い形容詞・な形容詞活用；Day 7：過去式・否定式・疑問句；Day
 8：指示詞（これ／それ／あれ）＋ N5 總複習；Day
-9：意向形＋〜と思います／〜つもりです）</li>
-<li>下一課：Day 10（可能形（〜られる／〜ことができる））——N4
-第二課！</li>
+9：意向形＋〜と思います／〜つもりです；Day
+10：可能形（〜られる／〜ことができる））</li>
+<li>下一課：Day 11（條件形（ば・と・たら・なら））</li>
 </ul>
 <h2 id="日課程大綱">30 日課程大綱</h2>
 <table>
@@ -117,7 +123,7 @@ website_version_manager 以 <code>type: "html"</code>
 <td>10</td>
 <td>N4</td>
 <td>可能形（〜られる／〜ことができる）</td>
-<td>☐</td>
+<td>☑</td>
 </tr>
 <tr class="odd">
 <td>11</td>
@@ -251,6 +257,7 @@ website_version_manager 以 <code>type: "html"</code>
 6（N5）：形容詞：い形容詞・な形容詞活用 - 2026-10-31｜Day
 7（N5）：過去式・否定式・疑問句 - 2026-11-01｜Day
 8（N5）：指示詞（これ／それ／あれ）＋ N5 總複習 - 2026-11-02｜Day
-9（N4）：意向形＋〜と思います／〜つもりです</p>
+9（N4）：意向形＋〜と思います／〜つもりです - 2026-11-03｜Day
+10（N4）：可能形（〜られる／〜ことができる）</p>
 </body>
 </html>
